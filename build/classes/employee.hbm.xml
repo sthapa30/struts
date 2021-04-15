@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25 April 2011 7:52:33 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.sym.dto.EmployeeDTO" table="EMPLOYEES">
+		<id name="empID" type="int">
+			<column name="EMPLOYEE_ID" />
+		</id>
+		<property name="lastName" type="string">
+			<column name="LAST_NAME" length="25" not-null="false" />
+		</property>
+		<property name="firstName" type="string">
+			<column name="FIRST_NAME" length="20" not-null="false" />
+		</property>
+		<property name="email" type="string">
+			<column name="EMAIL" />
+		</property>
+		<property name="hireDate" type="string">
+			<column name="HIRE_DATE" />
+		</property>
+		<property name="jobID" type="string">
+			<column name="JOB_ID" />
+		</property>
+	</class>
+</hibernate-mapping>
